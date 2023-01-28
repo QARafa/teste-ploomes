@@ -6,8 +6,8 @@ https://www.hackerrank.com/challenges/abbr/problem
 
 https://www.hackerrank.com/challenges/two-characters/problem?isFullScreen=true
 
-Repositório tem como função armazenar o Projeto do portal e curso em Cypress da QAxperience
-
 **Descrição:**
 
-Realizar a solução utilizando Javascript
+Realizar a solução utilizando dos testes na plataforma HackerRank
+
+Linguagem: JavaScript
