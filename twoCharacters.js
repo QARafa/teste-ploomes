@@ -40,12 +40,10 @@ function alternate(s) {
          
 
     let uniqueChar = [...new Set(Array.from(s))];
-    // console.log("uniqueChar: ", uniqueChar ); uniqueChar: [ 'b', 'e', 'a', 'f' ]
+  
 
     let sArr = Array.from(s);
-    //console.log("sArr: ", sArr); sArr: [ 'b', 'e', 'a', 'b', 'e', 'e', 'f', 'e', 'a', 'b']
-
-    //let validString = [],
+   
 
     let longest = 0;
 
@@ -57,18 +55,18 @@ function alternate(s) {
         for(var j = 0; j < uniqueChar.length; j++){
 
             let el2 = uniqueChar[j];
-            //console.log(el2); b, e, a, f, b, e, a, f, b, e, a, f, b, e, a, f
+            
 
             let temp = sArr.filter(filteredEl => {
-                return filteredEl === el1 || filterEl === el2
+                return filteredEl === el1 || filteredEl  === el2
             }).join('');
 
-            //console.log("temp: ", temp);  eaeeea, temp; eeefe, temp; babab, temp; eaeeea, temp; aa, temp; afa,  temp; bbfb, temp; eeefe, temp; afa, temp; f
-        
-          if(temp.indeOf(el1+el1) === -1 && temp.indeOf(el2+el2) === -1){
-            //console.log(temp); babab, babab, afa, f
+            
+            if(temp.indexOf(el1+el1) === -1 && temp.indexOf(el2+el2) === -1){
 
-            longest = Math.max(longest. temp.length);
+            
+
+                longest = Math.max(longest, temp.length);
 
           }
 
